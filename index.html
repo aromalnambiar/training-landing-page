@@ -71,21 +71,24 @@
 
             <div class="header-top-left  justify-content-around align-items-center">
                 <div class="link-container d-flex ">
-                    <a href="#contact" class="link">
-                        <p class="link-para">CONTACT</p>
-                    </a>
-    
-                    <a href="#testimonial" class="link">
-                        <p class="link-para">TESTIMONIALS</p>
-                    </a>
-    
-                    <a href="#review" class="link">
-                        <p class="link-para">ABOUT</p>
-                    </a>
-    
-                    <a href="#footer" class="link">
-                        <p class="link-para">TERMS</p>
-                    </a>
+                    <div class="links">
+                        <a href="#contact" class="link">
+                            <p class="link-para">CONTACT</p>
+                        </a>
+        
+                        <a href="#testimonial" class="link">
+                            <p class="link-para">TESTIMONIALS</p>
+                        </a>
+        
+                        <a href="#review" class="link">
+                            <p class="link-para">ABOUT</p>
+                        </a>
+        
+                        <a href="#footer" class="link">
+                            <p class="link-para">TERMS</p>
+                        </a>
+                    </div>
+                    
                 </div>
                 
 
@@ -104,7 +107,9 @@
 
 
     <div id="contact">
+            
             <div class="contact-container">
+                
                 <div class="contact-title">
                     <p class="title-para"><spam class="title-span-para">NEW</spam>
                         Stay Connected to the upcoming & Recent Jobs
@@ -462,7 +467,7 @@
 
         <div class="footer-links">
             <p class="footer-heading">
-                Product
+                Company
             </p>
 
             <a href="#" class="footer-subheading">
@@ -499,7 +504,7 @@
 
         <div class="footer-links">
             <p class="footer-heading">
-                Product
+                Support
             </p>
 
             <a href="#" class="footer-subheading">
@@ -592,6 +597,17 @@
                 variableWidth: true,
                 autoplay: true,
             });
+
+            drawer = document.querySelector(".drawer")
+            drawer.onclick = function () {
+
+                navBarContainer = document.querySelector(".link-container")
+                navBarContainer.classList.toggle("link-container-active")
+
+                navBar = document.querySelector(".links")
+                navBar.classList.toggle("links-active")
+            }
+
     </script>
 </body>
 </html>

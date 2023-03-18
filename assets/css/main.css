@@ -109,6 +109,7 @@ body{
     scroll-margin-top: 150px;
 }
 
+
 .contact-container{
     
     padding-left: 80px;
@@ -590,8 +591,8 @@ margin-bottom: 20px;
             display: none;
         }
 
-        .link{
-            display: none;
+        .links{
+            display: block;
         }
 
         .header-left{
@@ -622,3 +623,242 @@ margin-bottom: 20px;
         }
 
     }
+
+    /* 6th media query */
+
+    @media screen and (max-width: 680px){
+
+        /* contact */
+
+        #contact{
+            margin-top: 100px;
+            height: 90vh;
+            scroll-margin-top: 150px;
+        }
+
+        .contact-container{
+            background-position: top center;
+            background-size: 50%;
+        }
+
+        .contact-title{
+            background-color: #C9EBF2;
+            display: inline-block;
+            border-radius: 25px;
+            
+        }
+
+        .contact-container{
+            padding-top: 300px;
+        }
+
+        .title-para{
+            padding: 20px;
+            padding-right: 30px;
+            margin: auto;
+            font-size: 8px;
+            font-weight: 800;
+            color: var(--primary-color);
+        }
+
+        .contact-heading{
+            font-size: 30px;
+        }
+
+        .contact-subtitle{
+            font-size: 10px;
+            
+        }
+
+        .contact-button{
+            padding: 1px 30px;
+        }
+    
+        .contact-button-para{
+            font-size: 10px;
+        }
+
+        .companies-title{
+           font-size: 10px;
+        }
+
+        .title-span-para{
+            margin-right: 5px;
+        }
+
+        .company{
+            width: auto;
+            height: 20px;
+            margin-bottom: 20px;
+               
+    }
+
+    /* testimonial */
+
+    #testimonial{
+        padding: 10px;
+        padding-left: 10px;
+    }
+
+    .test-subheading{
+        font-size: 10px;
+    }
+
+    .test-heading{
+        font-size: 25px;
+    }
+
+    .test-div{
+        padding: 10px;
+        margin: 5px;
+        margin-top: 10px;
+        
+    }
+
+    /* count */
+
+    .count-heading{
+        font-size: 25px; 
+    }
+
+    .count-subheading{
+        font-size: 10px;
+    }
+    
+    .clients{
+        margin: 10px;
+    }
+
+    .counts-heading{
+        font-size: 25px;
+    }
+
+    .line{
+        font-size: 20px;
+    }
+
+    .counts-subheading{
+        font-size: 10px;
+    }
+
+    /* review */
+
+    #review{
+        padding: 10px;
+    }
+
+    .review-slide{
+        
+    }
+
+    .review-heading{
+        font-size: 30px;
+    }
+
+    .review-top{
+        border-radius: 20px;
+        width: 300px;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .review-title{
+        font-size: 15px;
+       
+    }
+
+    .review-subtitle{
+        font-size: 10px;
+    }
+
+    /* question */
+
+    #question{
+        padding: 20px;
+    }
+
+    .question-subheading{
+        font-size: 15px;
+        width: auto
+    }
+
+    /* footer */
+
+    #footer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .footer-heading{
+        margin-top: 50px;
+    }
+
+    .footer-logo{
+        margin-right: 180px;
+    }
+
+    /* bottom */
+
+    .bottom-text{
+        font-size: 10px;
+    }
+
+    .bottom-icon{
+        width: 25px;
+    }
+
+    .drawer{
+        padding-right: 20px;
+    }
+
+
+}
+
+/* media query 7th time */
+@media screen and (max-width: 490px){
+
+    /* footer */
+
+    
+    .footer-logo{
+        margin-right: 0;
+    }
+
+    .link-container-active{
+        position: absolute;
+        flex-direction: column;
+        margin: 0px;
+        background-color: var(--primary-color);
+        width: 100%;
+        top: 75px;
+        text-align: center;
+        right: 15px;
+    }
+
+    .link{
+        display: block;
+        text-align: center;
+        margin-right: auto;
+        margin-right: auto;
+    }
+
+    .links{
+        display: none;
+    }
+
+    .links-active{
+        display: block;
+    }
+
+    .link:hover{
+        border-bottom: #fff solid 3px;
+    }
+
+    .link-para{
+        color: #fff;
+        text-align: center;
+    }
+    
+}
