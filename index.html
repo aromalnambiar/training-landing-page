@@ -71,24 +71,21 @@
 
             <div class="header-top-left  justify-content-around align-items-center">
                 <div class="link-container d-flex ">
-                    <div class="links">
-                        <a href="#contact" class="link">
-                            <p class="link-para">CONTACT</p>
-                        </a>
-        
-                        <a href="#testimonial" class="link">
-                            <p class="link-para">TESTIMONIALS</p>
-                        </a>
-        
-                        <a href="#review" class="link">
-                            <p class="link-para">ABOUT</p>
-                        </a>
-        
-                        <a href="#footer" class="link">
-                            <p class="link-para">TERMS</p>
-                        </a>
-                    </div>
-                    
+                    <a href="#contact" class="link">
+                        <p class="link-para">CONTACT</p>
+                    </a>
+    
+                    <a href="#testimonial" class="link">
+                        <p class="link-para">TESTIMONIALS</p>
+                    </a>
+    
+                    <a href="#review" class="link">
+                        <p class="link-para">ABOUT</p>
+                    </a>
+    
+                    <a href="#footer" class="link">
+                        <p class="link-para">TERMS</p>
+                    </a>
                 </div>
                 
 
@@ -601,11 +598,13 @@
             drawer = document.querySelector(".drawer")
             drawer.onclick = function () {
 
-                navBarContainer = document.querySelector(".link-container")
-                navBarContainer.classList.toggle("link-container-active")
+            navBarContainer = document.querySelector(".link-container")
+            navBarContainer.classList.toggle("link-container-active")
 
-                navBar = document.querySelector(".links")
-                navBar.classList.toggle("links-active")
+            navBars = document.querySelectorAll(".link")
+            navBars.forEach(function(navBar) {
+                navBar.classList.toggle("link-active")
+            })
             }
 
     </script>
